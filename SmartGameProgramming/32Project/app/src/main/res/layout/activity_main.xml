@@ -11,34 +11,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/TestView"
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TUKorea !!"
-        android:textSize="60sp"
-        android:onClick="onBtnPushMe"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="228dp"
-        tools:ignore="MissingConstraints" />
+        android:text="Main Button"
+        android:id="@+id/mainButton"
+        android:onClick="onMainButtonClick"/>
 
-    <Button
-        android:id="@+id/pushmeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PushMe"
-        />
-
-    <Button
-        android:id="@+id/justButton"
-        android:layout_width="403dp"
-        android:layout_height="44dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="54dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
