@@ -3,35 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/pageTextView"
+        android:id="@+id/pageText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="1 / 5"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:text = "1 / 5" />
+        />
+
     <Button
         android:id="@+id/prevButton"
-        android:text="Prev"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onBtnPrev"/>
+        android:onClick="onBtnPrev"
+        android:text="Prev" />
+
     <Button
         android:id="@+id/nextButton"
-        android:text="Next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onBtnNext" />
+        android:onClick="onBtnNext"
+        android:text="Next" />
+
     <ImageView
-        android:id="@+id/mainImageView"
+        android:id="@+id/mainImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/cat1"/>
+        android:src="@mipmap/cat1" />
 
 
 </LinearLayout>

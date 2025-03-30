@@ -10,30 +10,42 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.a32imageswitcher.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
-    private int page;
+
+    private int page = 1;
+
     private @NonNull ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //super.onCreate(savedInstanceState);
-        //binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        super.onCreate(savedInstanceState);
         setContentView(binding.getRoot());
     }
 
     static final int[] RES_IDS = {
-            R.mipmap.cat1,R.mipmap.cat2,R.mipmap.cat3,R.mipmap.cat4,R.mipmap.cat5
+            R.mipmap.cat1, R.mipmap.cat2, R.mipmap.cat3, R.mipmap.cat4, R.mipmap.cat5,
     };
 
     public void onBtnPrev(View view) {
-        binding.pageTextView.setText("2 / 5");
-        page = 2;
-        int resId = RES_IDS[page -1];
-        binding.mainImageView.setImageResource(R.mipmap.cat2);
+        page--;
+        if (page<1) {
+            page = RES_IDS.length;
+        }
+        binding.pageText.setText(page + " / " + RES_IDS.length);
+        int resID = RES_IDS[page - 1];
+        binding.mainImage.setImageResource(resID);
     }
 
     public void onBtnNext(View view) {
-        binding.pageTextView.setText("3 / 5");
-        binding.mainImageView.setImageResource(R.mipmap.cat3);
+        page++;
+        if (page > RES_IDS.length) {
+            page = 1;
+        }
+        binding.pageText.setText(page + " / " + RES_IDS.length);
+        int resID = RES_IDS[page - 1];
+        binding.mainImage.setImageResource(resID);
     }
 }
