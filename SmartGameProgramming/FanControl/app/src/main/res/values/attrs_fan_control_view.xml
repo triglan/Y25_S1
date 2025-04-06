@@ -1,0 +1,12 @@
+<resources>
+    <declare-styleable name="FanControlView">
+        <attr name="buttonOutlineColor" format="color" />
+        <attr name="selectedButtonColor" format="color" />
+        <attr name="buttonCount" format="integer" />
+        <attr name="buttonAngles" format="string" />
+        <attr name="labels" format="string" />
+        <attr name="labelTextColor" format="color" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="defaultSelectedIndex" format="integer" />
+    </declare-styleable>
+</resources>

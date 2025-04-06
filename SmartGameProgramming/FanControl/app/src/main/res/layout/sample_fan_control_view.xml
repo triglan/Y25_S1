@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.fancontrol.FanControlView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:padding="24dp"
+        app:labels="정지,미풍,약풍,강풍"
+        app:buttonAngles="-135,-90,-45,0"
+        app:buttonOutlineColor="#444444"
+        app:selectedButtonColor="#FF4444"
+        app:labelTextColor="#222222"
+        app:labelTextSize="16sp"
+        app:defaultSelectedIndex="1" />
+
+</FrameLayout>
