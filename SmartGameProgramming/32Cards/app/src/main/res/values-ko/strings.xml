@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">카드게임</string>
+    <string name="restart">재시작</string>
+</resources>

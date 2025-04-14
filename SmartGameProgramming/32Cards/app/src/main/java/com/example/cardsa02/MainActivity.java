@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void askRestart() {
         new AlertDialog.Builder(this)
-                .setTitle("Restart")
+                .setTitle(R.string.restart)
                 .setMessage("Are you sure to restart the game?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
