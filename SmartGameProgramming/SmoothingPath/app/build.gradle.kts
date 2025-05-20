@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.smoothingpath"
+    namespace = "kr.ac.tukorea.ge.and.scgyong.smoothingpath"
     compileSdk = 35
 
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 
     defaultConfig {
-        applicationId = "com.example.smoothingpath"
+        applicationId = "kr.ac.tukorea.ge.and.scgyong.smoothingpath"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
