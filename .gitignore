@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# Ignore hwp File
+*.hwp
+
 # Compiled Object files
 *.slo
 *.lo
